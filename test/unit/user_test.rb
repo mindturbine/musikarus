@@ -23,7 +23,7 @@ test "a user should enter a profile name" do
   	assert !user.errors[:profile_name].empty?
   end 
 
-test "auser should have a profile name without spaces" do
+test "a user should have a profile name without spaces" do
 	user = User.new
 	user.profile_name = "My Profile With spaces"
 
