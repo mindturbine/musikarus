@@ -30,7 +30,7 @@ test "should be logged in to post a status" do
 end
 
   test "should create status when logged in" do
-    sign_in users(:alena)
+    sign_in users(:jonathan)
     assert_difference('Status.count') do
       post :create, status: { content: @status.content }
     end
