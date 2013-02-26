@@ -9,3 +9,9 @@ jonathan:
  last_name: "Medina"
  email: "gabefun@gmail.com"
  profile_name: "jonathanmedina"
+
+gabe:
+ first_name: "gabe"
+ last_name: "Medina"
+ email: "gabriel@mindturbine.com"
+ profile_name: gabrielmedina
