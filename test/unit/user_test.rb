@@ -42,17 +42,22 @@ test "a user can have a correctly formatted profile name" do
   user.password = user.password_confirmation = 'asdfasdf'
 
   user.profile_name = 'jonathanmedina'
-  
-end
+ 
+ end
 
-  test "that no error is raised when trying to access a friend list" do
+test "that no error is raised when trying to access a friend list" do
     assert_nothing_raised do
       users(:jonathan).friends
     end
-  end
-  test "that creating friendships on a user works" do
+end
+
+test "that creating friendships on a user works" do
     users(:jonathan).friends<< users(:alena)
     users(:jonathan).friends.reload
     assert users(:jonathan).friends.include?(users(:alena))
   end
+
+test "that calling to_param on a user returns the profile_name" do
+    assert_equal "alenatitov", users(:alena).to_param
+end
 end
