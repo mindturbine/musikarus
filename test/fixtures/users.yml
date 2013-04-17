@@ -3,6 +3,7 @@ alena:
  last_name: "titov"
  email: "alenatrabaja@gmail.com"
  profile_name: "alenatitov"
+ encrypted_password: "$2a$10$Fh/Hm8RxDsuPTeBUr6864.GARlcmt7zF2WspaXGr3BIv2C27N.osq"
 
 jonathan:
  first_name: "Jonathan"
